@@ -1,0 +1,6 @@
+<script type="text/x-handlebars" data-template-name="comments/new">
+  <form {{action save on='submit'}}>
+    {{view Ember.TextArea valueBinding="text" placeholder="Enter comment here"}}
+    <button type="submit">Create Comment</button>  
+  </form>
+</script>

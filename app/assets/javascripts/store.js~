@@ -1,0 +1,10 @@
+App.Store = DS.Store.extend({
+  revision: 12,
+  adapter: DS.RESTAdapter.create({
+    bulkCommit: false
+  })
+});
+
+//DS.RESTAdapter.map('App.Post', {
+ // comments: { embedded: 'always' }
+//});

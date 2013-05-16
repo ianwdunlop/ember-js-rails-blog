@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: Comment one
+  content: Content for comment one
+
+two:
+  title: Comment two
+  content: Content for comment two
