@@ -1,0 +1,5 @@
+<form {{action save content on='submit'}}>
+  {{view Ember.TextArea valueBinding="title" placeholder="Enter title here"}}
+  {{view Ember.TextArea valueBinding="content.content" placeholder="Enter content here"}}
+  <button type="submit">Create Post</button>  
+</form>

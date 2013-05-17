@@ -1,13 +1,16 @@
 App.Router.map(function() {
-  this.resource('posts');
+  this.resource('posts', function() {
+    this.route('new');
+  });
   this.resource('post', { path: '/posts/:post_id' }, function() {
-  //  this.resource('comments', function() {
-  //    this.route('new');
+    this.route('new');
+    this.resource('comments', function() {
+      this.route('new');
     });
-  //  this.route('comment', { path: 'comments/:comment_id'});
-  //});
+    this.route('comment', { path: 'comments/:comment_id'});
+  });
 });
-App.PostsRoute=Ember.Route.extend({
+App.PostsIndexRoute=Ember.Route.extend({
   model: function(){
     return App.Post.find();
   }
@@ -23,4 +26,10 @@ App.CommentsNewRoute=Ember.Route.extend({
   setupController: function(controller, model) {
     controller.set('text', null);
   }	
+});
+
+App.PostsNewRoute=Ember.Route.extend({
+  setupController: function(controller, model) {
+    controller.set('content', null);
+  }
 });
