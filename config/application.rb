@@ -61,5 +61,7 @@ module Blog
 
     #ember js
     HandlebarsAssets::Config.ember = true
+    #HandlebarsAssets::Config.compiler = 'my_handlebars.js' # Change the name of the compiler file
+    #HandlebarsAssets::Config.compiler_path = Rails.root.join('app/assets/javascripts') # Change the location of the compiler file
   end
 end

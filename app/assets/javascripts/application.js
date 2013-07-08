@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require handlebars
-//= require ember-latest
+//= require ember-1.0.0-rc.6
 //= require ember-data-latest
 //= require_self
 //= require blog
