@@ -1,7 +1,7 @@
 Posts
 <ul>
-  {{#each model}}
+  {{#each controller}}
     <li>{{#linkTo post this}}{{title}}{{/linkTo}}</li>
   {{/each}}
 </ul>
-
+{{#linkTo posts.new}}New Post{{/linkTo}}
