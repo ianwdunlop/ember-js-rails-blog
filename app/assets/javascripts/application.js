@@ -16,6 +16,8 @@
 //= require ember-1.0.0-rc.6
 //= require ember-data-latest
 //= require bootstrap
+//= require moment.min
+//= require helpers
 //= require_self
 //= require blog
 
