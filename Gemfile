@@ -22,6 +22,8 @@ group :assets do
 
   gem 'handlebars_assets', '0.12.3'
   
+  gem 'bootstrap-sass'
+  
 end
 
 gem 'jquery-rails', '2.2.1'
