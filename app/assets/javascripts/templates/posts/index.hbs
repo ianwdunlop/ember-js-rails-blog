@@ -1,7 +1,7 @@
 Posts
-<ul>
+<ul class="post">
   {{#each controller}}
-    <li>{{#linkTo post this}}{{title}}{{/linkTo}}</li>
+    <li><section class="container">{{view App.PostListInnerView}}</section></li>
   {{/each}}
 </ul>
 {{#linkTo posts.new}}New Post{{/linkTo}}
