@@ -15,6 +15,7 @@
 //= require handlebars
 //= require ember-1.0.0-rc.6
 //= require ember-data-latest
+//= require bootstrap
 //= require_self
 //= require blog
 
