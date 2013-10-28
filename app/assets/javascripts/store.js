@@ -8,3 +8,4 @@
 //    return promise;
 //  }
 //});
+App.ApplicationSerializer = DS.ActiveModelSerializer.extend({});
