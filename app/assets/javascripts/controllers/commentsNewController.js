@@ -3,12 +3,11 @@ App.CommentsNewController=Ember.ObjectController.extend({
 	text: null,
 	
 	save: function() {
-                var me = this;
-		var post = this.get('controllers.post.content');
-		var comment = App.Comment.createRecord({ post: post, text: this.get('text') });
-                comment.on('didCreate', function() {
-                  me.get('target').transitionTo('post.index');
-                });
-                comment.get("store").commit();
+      var me = this;
+	  var post = this.get('controllers.post.content');
+	  var comment = this.get('store').createRecord('comment', { post_id: post.id, text: this.get('text') });
+      comment.save().then(function(comment){
+        me.get('target').transitionTo('post.index');
+      });
 	}
 });

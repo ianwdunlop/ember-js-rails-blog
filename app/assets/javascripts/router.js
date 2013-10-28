@@ -11,7 +11,7 @@ App.Router.map(function() {
 });
 App.PostsRoute=Ember.Route.extend({
   model: function(){
-    return App.Post.find();
+    return this.get('store').find('post');
   }
 });
 
@@ -29,7 +29,7 @@ App.CommentsNewRoute=Ember.Route.extend({
 
 App.PostsIndexRoute=Ember.Route.extend({
   model: function(){
-    return App.Post.find();
+    return this.modelFor('posts');
   }
 });
 
@@ -42,4 +42,10 @@ App.PostsNewRoute=Ember.Route.extend({
   model: function(){
   }
 
+});
+
+App.PostRoute = Ember.Route.extend({
+  model: function(params) {
+    return this.get('store').find('post', params.post_id);
+  }
 });

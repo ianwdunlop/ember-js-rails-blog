@@ -1,4 +1,4 @@
 App.Comment = DS.Model.extend({
-  post: DS.belongsTo('App.Post'),
+  post: DS.belongsTo('post'),
   text: DS.attr('string')
 });
