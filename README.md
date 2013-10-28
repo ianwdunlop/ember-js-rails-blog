@@ -1,6 +1,8 @@
 Ember JS: Server side
 =====================
 
+Now updated for Ember 1.0 http://dev.mygrid.org.uk/blog/?p=218
+
 Use this code in conjunction with http://dev.mygrid.org.uk/blog/?p=121 to create a Ruby on Rails
 application to persist data from an Ember JS client side app. The rails app also serves as the
 application server for the Ember JS javascript files. See http://dev.mygrid.org.uk/blog/?p=46 and 
